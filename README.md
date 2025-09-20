@@ -1,2 +1,2 @@
 # UsefulTools
-In this repository you will find convenient tools for real life.
+In this repository you will find convenient tools for real life written in python.
