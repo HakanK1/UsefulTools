@@ -1,3 +1,4 @@
+#Exchanges money between currencies around the world.
 import requests
 import json
 
@@ -12,4 +13,5 @@ infos = requests.get(api_url +exchanged_currency)
 infos_json = json.loads(infos.text)
 print(f"1 {exchanged_currency} = {infos_json["conversion_rates"][purchased_currency]} {purchased_currency}")
 result = amount * infos_json["conversion_rates"][purchased_currency]
+
 print(f"{amount} {exchanged_currency} = {result} {purchased_currency}")
